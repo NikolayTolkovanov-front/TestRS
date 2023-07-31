@@ -1,4 +1,5 @@
 # testrs
+Тестовое задание на позицию frontend-разарботчика в компанию Roket Science
 
 ## Project setup
 ```
