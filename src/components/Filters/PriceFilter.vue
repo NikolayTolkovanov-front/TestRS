@@ -26,6 +26,7 @@
     :min="minPrice"
     :max="maxPrice"
     :tooltipPosition="tooltopPosition"
+    @slide="changePricesInInputs"
   />
 </template>
 
@@ -53,6 +54,11 @@ export default {
   methods: {
     clearFilter() {
       this.prices = [1000, 70000];
+    },
+
+    changePricesInInputs(prices) {
+      this.prices[0] = prices[0]
+      this.prices[1] = prices[1]
     },
 
     validateFirstFilterByNumber() {
